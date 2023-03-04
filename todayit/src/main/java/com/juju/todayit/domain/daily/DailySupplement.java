@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @Setter
 @Getter
 @Entity
-// 일 별 사용자 영양제 섭취량 저장 테이블
+@Table(name = "daily_supplement")
 public class DailySupplement {
 
   @Id

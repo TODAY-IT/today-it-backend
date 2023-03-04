@@ -10,7 +10,6 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-// 사용자가 설정한 영양제 섭취량(기준)
 @Entity
 @Setter
 @Getter
