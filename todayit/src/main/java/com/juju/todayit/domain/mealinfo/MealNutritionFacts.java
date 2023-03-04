@@ -1,6 +1,7 @@
 package com.juju.todayit.domain.mealinfo;
 
 import com.juju.todayit.domain.daily.DailyMeal;
+import com.juju.todayit.domain.utils.embedded.NutritionFacts;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,21 +20,6 @@ public class MealNutritionFacts {
   @JoinColumn(name = "daily_meal_id")
   private DailyMeal dailyMeal;
 
-  private double totalCalories;
-
-  private double carbohydrate;
-
-  private double protein;
-
-  private double fat;
-
-  private double saturatedFat;
-
-  private double transFat;
-
-  private double sugars;
-
-  private double sodium;
-
-  private double cholesterol;
+  @Embedded
+  private NutritionFacts nutritionFacts;
 }

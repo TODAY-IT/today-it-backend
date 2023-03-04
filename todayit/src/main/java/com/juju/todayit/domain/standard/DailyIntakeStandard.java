@@ -1,6 +1,7 @@
 package com.juju.todayit.domain.standard;
 
 import com.juju.todayit.domain.user.User;
+import com.juju.todayit.domain.utils.embedded.NutritionFacts;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,23 +18,8 @@ public class DailyIntakeStandard {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private double totalCalories;
-
-  private double carbohydrate;
-
-  private double protein;
-
-  private double fat;
-
-  private double saturatedFat;
-
-  private double transFat;
-
-  private double sugars;
-
-  private double sodium;
-
-  private double cholesterol;
+  @Embedded
+  private NutritionFacts nutritionFacts;
 
   private Long userId;
 
