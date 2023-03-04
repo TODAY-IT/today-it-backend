@@ -55,5 +55,5 @@ public class User {
   private List<DailyMeal> dailyMealList = new ArrayList<>();
 
   @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-  private List<UserSupplementStandard> userSupplementList = new ArrayList<>();
+  private List<UserSupplementStandard> userSupplementStandardsList = new ArrayList<>();
 }
