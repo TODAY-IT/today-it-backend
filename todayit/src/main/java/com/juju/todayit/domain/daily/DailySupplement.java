@@ -1,6 +1,6 @@
 package com.juju.todayit.domain.daily;
 
-import com.juju.todayit.domain.user.userinfo.UserSupplement;
+import com.juju.todayit.domain.user.userinfo.UserSupplementStandard;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,7 +19,7 @@ public class DailySupplement {
 
   @ManyToOne
   @JoinColumn(name = "user_supplement_id")
-  private UserSupplement userSupplement;
+  private UserSupplementStandard userSupplement;
 
   private LocalDate date;
 

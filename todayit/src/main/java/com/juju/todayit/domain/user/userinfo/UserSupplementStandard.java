@@ -1,6 +1,5 @@
 package com.juju.todayit.domain.user.userinfo;
 
-import com.juju.todayit.domain.daily.DailyMeal;
 import com.juju.todayit.domain.daily.DailySupplement;
 import com.juju.todayit.domain.user.User;
 import lombok.Getter;
@@ -14,7 +13,7 @@ import java.util.List;
 @Setter
 @Getter
 @Table(name = "user_supplement")
-public class UserSupplement {
+public class UserSupplementStandard {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;

@@ -4,7 +4,7 @@ import com.juju.todayit.domain.daily.DailyBloodSugar;
 import com.juju.todayit.domain.daily.DailyMeal;
 import com.juju.todayit.domain.standard.DailyIntakeStandard;
 import com.juju.todayit.domain.user.userinfo.UserDisease;
-import com.juju.todayit.domain.user.userinfo.UserSupplement;
+import com.juju.todayit.domain.user.userinfo.UserSupplementStandard;
 import com.juju.todayit.domain.utils.enums.Gender;
 import com.juju.todayit.domain.utils.enums.PurposeOfUse;
 import lombok.Getter;
@@ -55,5 +55,5 @@ public class User {
   private List<DailyMeal> dailyMealList = new ArrayList<>();
 
   @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-  private List<UserSupplement> userSupplementList = new ArrayList<>();
+  private List<UserSupplementStandard> userSupplementList = new ArrayList<>();
 }
