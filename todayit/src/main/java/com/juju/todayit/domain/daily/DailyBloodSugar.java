@@ -21,5 +21,5 @@ public class DailyBloodSugar {
 
   private double level;
 
-  private LocalDateTime test_time;
+  private LocalDateTime testTime;
 }

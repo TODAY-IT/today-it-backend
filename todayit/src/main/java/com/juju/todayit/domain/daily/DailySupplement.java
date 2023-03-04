@@ -25,5 +25,5 @@ public class DailySupplement {
 
   private LocalDate date;
 
-  private int actual_count;
+  private int actualCount;
 }

@@ -26,9 +26,9 @@ public class DailyMeal {
   private String image;
 
   @Enumerated(EnumType.STRING)
-  private MealType meal_type;
+  private MealType mealType;
 
-  private LocalDateTime meal_datetime;
+  private LocalDateTime mealDatetime;
 
   @OneToOne
   @JoinColumn(name = "meal_nutrition_facts_id")

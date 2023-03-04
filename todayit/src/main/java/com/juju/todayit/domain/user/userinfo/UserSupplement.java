@@ -27,7 +27,7 @@ public class UserSupplement {
   private User user;
 //  private Long user_id;
 
-  private int target_count;
+  private int targetCount;
 
   @OneToMany(mappedBy = "userSupplement", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<DailySupplement> dailySupplementList = new ArrayList<>();

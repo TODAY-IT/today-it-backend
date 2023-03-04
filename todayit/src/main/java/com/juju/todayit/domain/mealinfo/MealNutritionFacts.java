@@ -19,7 +19,7 @@ public class MealNutritionFacts {
   private DailyMeal dailyMeal;
 //  private Long daily_meal_id;
 
-  private double total_calories;
+  private double totalCalories;
 
   private double carbohydrate;
 
@@ -27,9 +27,9 @@ public class MealNutritionFacts {
 
   private double fat;
 
-  private double saturated_fat;
+  private double saturatedFat;
 
-  private double trans_fat;
+  private double transFat;
 
   private double sugars;
 

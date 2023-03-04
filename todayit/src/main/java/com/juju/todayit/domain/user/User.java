@@ -25,7 +25,7 @@ public class User {
   @Column(nullable = false)
   private Long id;
 
-  private String kakao_id;
+  private String kakaoId;
 
   private String name;
 
