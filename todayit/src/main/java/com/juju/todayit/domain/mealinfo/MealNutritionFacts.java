@@ -15,8 +15,7 @@ public class MealNutritionFacts {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @OneToOne(mappedBy = "meal_nutrition_facts")
-  @JoinColumn(name = "daily_meal_id")
+  @OneToOne(mappedBy = "mealNutritionFacts")
   private DailyMeal dailyMeal;
 //  private Long daily_meal_id;
 

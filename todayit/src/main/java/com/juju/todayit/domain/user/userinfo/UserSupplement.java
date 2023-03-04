@@ -29,6 +29,6 @@ public class UserSupplement {
 
   private int target_count;
 
-  @OneToMany(mappedBy = "user_supplement", cascade = CascadeType.ALL, orphanRemoval = true)
+  @OneToMany(mappedBy = "userSupplement", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<DailySupplement> dailySupplementList = new ArrayList<>();
 }

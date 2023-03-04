@@ -37,6 +37,6 @@ public class DailyIntakeStandard {
 
   private Long userId;
 
-  @OneToMany(mappedBy = "daily_intake_standard", cascade = CascadeType.ALL, orphanRemoval = true)
+  @OneToMany(mappedBy = "dailyIntakeStandard", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<User> userList = new ArrayList<>();
 }
