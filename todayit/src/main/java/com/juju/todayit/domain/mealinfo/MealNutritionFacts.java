@@ -16,8 +16,8 @@ public class MealNutritionFacts {
   private Long id;
 
   @OneToOne(mappedBy = "mealNutritionFacts")
+  @JoinColumn(name = "daily_meal_id")
   private DailyMeal dailyMeal;
-//  private Long daily_meal_id;
 
   private double totalCalories;
 

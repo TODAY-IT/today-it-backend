@@ -24,7 +24,6 @@ public class UserSupplement {
   @ManyToOne
   @JoinColumn(name = "user_id")
   private User user;
-//  private Long user_id;
 
   private int targetCount;
 

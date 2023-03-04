@@ -19,10 +19,8 @@ public class UserDisease {
   @ManyToOne
   @JoinColumn(name = "user_id")
   private User user;
-//  private Long user_id;
 
   @ManyToOne
   @JoinColumn(name = "disease_id")
   private Disease disease;
-//  private Long disease_id;
 }

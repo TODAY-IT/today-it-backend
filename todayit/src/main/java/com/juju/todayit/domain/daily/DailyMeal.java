@@ -21,7 +21,6 @@ public class DailyMeal {
   @ManyToOne
   @JoinColumn(name = "user_id")
   private User user;
-//  private Long user_id;
 
   private String image;
 

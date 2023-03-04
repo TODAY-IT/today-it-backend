@@ -15,13 +15,11 @@ public class DailySupplement {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-//  @Column(name = "id", nullable = false)
   private Long id;
 
   @ManyToOne
   @JoinColumn(name = "user_supplement_id")
   private UserSupplement userSupplement;
-//  private Long supplement_id;
 
   private LocalDate date;
 
