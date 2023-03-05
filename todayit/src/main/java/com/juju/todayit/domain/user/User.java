@@ -41,7 +41,7 @@ public class User {
   @Enumerated(EnumType.STRING)
   private PurposeOfUse purpose;
 
-  @ManyToOne
+  @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
   @JoinColumn(name = "daily_intake_standard_id")
   private DailyIntakeStandard dailyIntakeStandard;
 

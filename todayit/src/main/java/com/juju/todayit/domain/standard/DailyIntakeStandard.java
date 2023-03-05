@@ -23,6 +23,7 @@ public class DailyIntakeStandard {
 
   private Long userId;
 
-  @OneToMany(mappedBy = "dailyIntakeStandard", cascade = CascadeType.ALL, orphanRemoval = true)
-  private List<User> userList = new ArrayList<>();
+  @OneToOne
+  @JoinColumn(name = "user_id")
+  private User user;
 }
