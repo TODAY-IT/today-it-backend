@@ -21,8 +21,6 @@ public class DailyIntakeStandard {
   @Embedded
   private NutritionFacts nutritionFacts;
 
-  private Long userId;
-
   @OneToOne
   @JoinColumn(name = "user_id")
   private User user;
