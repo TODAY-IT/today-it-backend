@@ -35,11 +35,13 @@ public class User {
 
   private double weight;
 
-  @Enumerated(EnumType.STRING)
-  private Gender gender;
+//  @Enumerated(EnumType.STRING)
+//  private Gender gender;
+  private int gender;
 
-  @Enumerated(EnumType.STRING)
-  private PurposeOfUse purpose;
+//  @Enumerated(EnumType.STRING)
+//  private PurposeOfUse purpose;
+  private int purpose;
 
   @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
   @JoinColumn(name = "daily_intake_standard_id")

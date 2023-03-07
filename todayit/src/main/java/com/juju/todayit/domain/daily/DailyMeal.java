@@ -24,8 +24,10 @@ public class DailyMeal {
 
   private String image;
 
-  @Enumerated(EnumType.STRING)
-  private MealType mealType;
+//  @Enumerated(EnumType.STRING)
+//  private MealType mealType;
+  private String mealType;
+  // 근데 어차피 mealType을 디비에 저장할 때는 enum값중 하나만 넣을거니까 이렇게 둬야하지 않나? 라는 생각이....
 
   private LocalDateTime mealDatetime;
 
