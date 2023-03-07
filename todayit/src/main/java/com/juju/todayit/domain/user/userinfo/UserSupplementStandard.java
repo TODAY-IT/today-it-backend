@@ -2,7 +2,9 @@ package com.juju.todayit.domain.user.userinfo;
 
 import com.juju.todayit.domain.daily.DailySupplement;
 import com.juju.todayit.domain.user.User;
+
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -13,6 +15,7 @@ import java.util.List;
 @Setter
 @Getter
 @Table(name = "user_supplement")
+@NoArgsConstructor
 public class UserSupplementStandard {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,4 +31,10 @@ public class UserSupplementStandard {
 
   @OneToMany(mappedBy = "userSupplement", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<DailySupplement> dailySupplementList = new ArrayList<>();
+
+  public UserSupplementStandard(String name, User user, int targetCount) {
+    this.name = name;
+    this.user = user;
+    this.targetCount = targetCount;
+  }
 }
